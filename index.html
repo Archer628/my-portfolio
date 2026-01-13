@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Morgan | UI/UX Designer</title>
-    <!-- 引入 Poppins 字体 -->
+    <title>邹智文 | UI/UX设计师</title>
+    <!-- 引入 MiSans 和 Poppins 字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- 引入公共样式 -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -16,12 +18,15 @@
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="nav-logo">Alex Morgan</a>
+            <a href="index.html" class="nav-logo">邹智文</a>
             <ul class="nav-links">
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#other">Other</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="work.html" data-key="nav.work">作品</a></li>
+                <li><a href="about.html" data-key="nav.about">关于</a></li>
+                <li><a href="#contact" data-key="nav.contact">联系</a></li>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="zh">中</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </div>
@@ -31,14 +36,14 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-subtitle">UI/UX Designer & Product Strategist</div>
-                <h1 class="hero-title">Creating Digital Experiences That Matter</h1>
-                <p class="hero-description">
-                    I design intuitive digital products that solve real user problems. With 5+ years of experience, I specialize in user-centered design, prototyping, and design systems for startups and tech companies.
+                <div class="hero-subtitle" data-key="home.subtitle">UI/UX 设计师 & 产品策略师</div>
+                <h1 class="hero-title" data-key="home.title">创造有价值的数字体验</h1>
+                <p class="hero-description" data-key="home.description">
+                    我设计直观的数字产品，解决真实的用户问题。拥有5年以上的经验，专精于用户中心设计、原型设计和设计系统，服务过初创企业和科技公司。
                 </p>
                 <div class="cta-buttons">
-                    <a href="work.html" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <a href="work.html" class="btn btn-primary" data-key="home.viewWork">查看作品</a>
+                    <a href="#contact" class="btn btn-outline" data-key="home.getInTouch">联系我</a>
                 </div>
             </div>
         </div>
@@ -47,76 +52,60 @@
     <!-- 作品集部分 -->
     <section class="portfolio" id="work">
         <div class="container">
-            <h2 class="section-title">Selected Projects</h2>
-            <p class="section-subtitle">A curated selection of my recent UI/UX design projects</p>
+            <h2 class="section-title" data-key="home.selectedProjects">精选项目</h2>
+            <p class="section-subtitle" data-key="home.projectSubtitle">近期UI/UX设计项目精选</p>
             
             <div class="work-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="mobile">Mobile App</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                <button class="filter-btn active" data-filter="all" data-key="filter.all">全部</button>
+                <button class="filter-btn" data-filter="mobile" data-key="filter.mobile">移动应用</button>
+                <button class="filter-btn" data-filter="web" data-key="filter.web">网页设计</button>
+                <button class="filter-btn" data-filter="dashboard" data-key="filter.dashboard">仪表板</button>
             </div>
             
             <div class="work-grid">
                 <!-- 项目 1 -->
                 <div class="work-item" data-category="mobile">
-                    <div class="work-image">Fintech App</div>
+                    <div class="work-image">
+                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: linear-gradient(45deg, #3b82f6, #8b5cf6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            Fintech App UI
+                        </div>
+                    </div>
                     <div class="work-content">
-                        <span class="work-category">Mobile App</span>
-                        <h3>Banking App Redesign</h3>
-                        <p>Complete redesign of a mobile banking application focused on improving financial literacy and transaction clarity for millennials.</p>
-                        <a href="case-study-1.html" class="work-link">View Case Study →</a>
+                        <span class="work-category" data-key="project1.category">移动应用</span>
+                        <h3 data-key="project1.title">银行应用重新设计</h3>
+                        <p data-key="project1.description">为千禧一代用户重新设计移动银行应用，专注于提升财务素养和交易清晰度。</p>
+                        <a href="case-study-1.html" class="work-link" data-key="project1.link">查看案例研究 →</a>
                     </div>
                 </div>
                 
                 <!-- 项目 2 -->
                 <div class="work-item" data-category="web">
-                    <div class="work-image">E-commerce Platform</div>
+                    <div class="work-image">
+                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: linear-gradient(45deg, #10b981, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            E-commerce Website
+                        </div>
+                    </div>
                     <div class="work-content">
-                        <span class="work-category">Web Design</span>
-                        <h3>E-commerce UX Optimization</h3>
-                        <p>User experience redesign for an online retailer, resulting in 34% increase in conversion rate and improved checkout flow.</p>
-                        <a href="case-study-2.html" class="work-link">View Case Study →</a>
+                        <span class="work-category" data-key="project2.category">网页设计</span>
+                        <h3 data-key="project2.title">电商用户体验优化</h3>
+                        <p data-key="project2.description">为在线零售商重新设计用户体验，转化率提升34%，结账流程得到改善。</p>
+                        <a href="case-study-2.html" class="work-link" data-key="project2.link">查看案例研究 →</a>
                     </div>
                 </div>
                 
                 <!-- 项目 3 -->
                 <div class="work-item" data-category="dashboard">
-                    <div class="work-image">Analytics Dashboard</div>
-                    <div class="work-content">
-                        <span class="work-category">Dashboard</span>
-                        <h3>Data Visualization Dashboard</h3>
-                        <p>Designed an intuitive analytics dashboard for SaaS companies to track KPIs and user engagement metrics in real-time.</p>
-                        <a href="#" class="work-link">View Case Study →</a>
+                    <div class="work-image">
+                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: linear-gradient(45deg, #8b5cf6, #ec4899); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            Analytics Dashboard
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 其他部分 -->
-    <section class="other" id="other">
-        <div class="container">
-            <h2 class="section-title">Other Work & Interests</h2>
-            <p class="section-subtitle">Beyond UI/UX design, here's what else I'm passionate about</p>
-            
-            <div class="other-grid">
-                <div class="other-card">
-                    <div class="other-icon">✍️</div>
-                    <h3>Design Writing</h3>
-                    <p>I regularly write about design processes, accessibility, and design thinking. My articles have been featured in several design publications.</p>
-                </div>
-                
-                <div class="other-card">
-                    <div class="other-icon">📚</div>
-                    <h3>Mentoring</h3>
-                    <p>I mentor aspiring designers through online platforms, helping them build portfolios and transition into the design industry.</p>
-                </div>
-                
-                <div class="other-card">
-                    <div class="other-icon">🎨</div>
-                    <h3>Side Projects</h3>
-                    <p>In my spare time, I work on passion projects that explore the intersection of design, technology, and social impact.</p>
+                    <div class="work-content">
+                        <span class="work-category" data-key="project3.category">仪表板</span>
+                        <h3 data-key="project3.title">数据可视化仪表板</h3>
+                        <p data-key="project3.description">为SaaS公司设计直观的分析仪表板，实时跟踪KPI和用户参与度指标。</p>
+                        <a href="#" class="work-link" data-key="project3.link">查看案例研究 →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,38 +116,37 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Alex Morgan</h3>
-                    <p>UI/UX Designer focused on creating human-centered digital products that solve real problems.</p>
+                    <h3 class="footer-name">邹智文</h3>
+                    <p data-key="footer.title">专注于创造以人为本的数字产品，解决实际问题。</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">in</a>
-                        <a href="#" class="social-link">𝕏</a>
-                        <a href="#" class="social-link">D</a>
-                        <a href="#" class="social-link">IG</a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-key="footer.quickLinks">快速链接</h3>
                     <ul class="footer-links">
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#other">Other</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="work.html" data-key="nav.work">作品</a></li>
+                        <li><a href="about.html" data-key="nav.about">关于</a></li>
+                        <li><a href="#contact" data-key="nav.contact">联系</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Get In Touch</h3>
+                    <h3 data-key="footer.getInTouch">联系我</h3>
                     <ul class="footer-links">
-                        <li>📍 San Francisco, CA</li>
-                        <li><a href="mailto:hello@alexmorgan.design">hello@alexmorgan.design</a></li>
-                        <li><a href="tel:+14155551234">+1 (415) 555-1234</a></li>
+                        <li data-key="footer.location">📍 深圳，中国</li>
+                        <li><a href="mailto:13670282592@163.com" class="contact-email" data-type="primary">13670282592@163.com</a></li>
+                        <li><a href="tel:+8613670282592" data-key="footer.phone">+86 136 7028 2592</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>© 2024 Alex Morgan. All rights reserved.</p>
+                <p data-key="footer.copyright">© 2024 邹智文. 保留所有权利。</p>
             </div>
         </div>
     </footer>
