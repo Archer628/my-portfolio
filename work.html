@@ -1,77 +1,234 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集 | 邹智文</title>
-    <!-- 引入 MiSans 和 Poppins 字体 -->
+    <title>Works - ZZWDESIGN Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- 引入公共样式 -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="nav-logo">邹智文</a>
-            <ul class="nav-links">
-                <li><a href="work.html" class="active" data-key="nav.work">作品</a></li>
-                <li><a href="about.html" data-key="nav.about">关于</a></li>
-                <li><a href="index.html#contact" data-key="nav.contact">联系</a></li>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="zh">中</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
-            </ul>
-            <button class="mobile-menu-btn">☰</button>
-        </div>
-    </nav>
-
-    <!-- 作品集部分 -->
-    <section class="portfolio" style="padding-top: 140px;">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <h1 class="section-title" data-key="work.title">所有项目</h1>
-            <p class="section-subtitle" data-key="work.subtitle">涵盖各个行业和平台的UI/UX设计作品全集</p>
-            
-            <div class="work-filter">
-                <button class="filter-btn active" data-filter="all" data-key="filter.all">全部</button>
-                <button class="filter-btn" data-filter="mobile" data-key="filter.mobile">移动应用</button>
-                <button class="filter-btn" data-filter="web" data-key="filter.web">网页设计</button>
-                <button class="filter-btn" data-filter="dashboard" data-key="filter.dashboard">仪表板</button>
-                <button class="filter-btn" data-filter="branding" data-key="work.branding">品牌设计</button>
+            <div class="header-content">
+                <a href="index.html" class="logo">ZZW<span>DESIGN</span></a>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="work.html" class="active">Works</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </nav>
             </div>
+        </div>
+    </header>
+
+    <!-- Works Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>My Design Works</h1>
+            <p>A collection of projects I've designed over the years, showcasing my approach to solving design problems and creating engaging user experiences.</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="container">
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Works</button>
+            <button class="filter-tab" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-tab" data-filter="web">Web Design</button>
+            <button class="filter-tab" data-filter="branding">Branding</button>
+            <button class="filter-tab" data-filter="uiux">UI/UX Design</button>
+        </div>
+        
+        <!-- Works Grid -->
+        <div class="works-grid">
+            <!-- Work 1 -->
+            <a href="case-study-1.html" class="work-item" data-category="mobile">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Michaels Buyer Tools" class="work-image">
+                    <div class="tag mobile work-tag">Mobile App</div>
+                </div>
+                <div class="work-content">
+                    <h3>Michaels Buyer Tools</h3>
+                    <p>Inventory management and procurement mobile application for retail stores</p>
+                    <div class="date">Jan 2023 - Mar 2024</div>
+                </div>
+            </a>
             
-            <div class="work-grid">
-                <!-- 项目 1 -->
-                <div class="work-item" data-category="mobile">
-                    <div class="work-image">
-                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: linear-gradient(45deg, #3b82f6, #8b5cf6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
-                            Fintech App UI
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <span class="work-category" data-key="project1.category">移动应用</span>
-                        <h3 data-key="project1.title">银行应用重新设计</h3>
-                        <p data-key="project1.description">为千禧一代用户重新设计移动银行应用，专注于提升财务素养和交易清晰度。</p>
-                        <a href="case-study-1.html" class="work-link" data-key="project1.link">查看案例研究 →</a>
-                    </div>
+            <!-- Work 2 -->
+            <a href="case-study-2.html" class="work-item" data-category="web">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="EcoCommerce Platform" class="work-image">
+                    <div class="tag web work-tag">Web Design</div>
+                </div>
+                <div class="work-content">
+                    <h3>EcoCommerce Platform</h3>
+                    <p>Sustainable e-commerce platform with focus on user experience</p>
+                    <div class="date">Aug 2022 - Dec 2022</div>
+                </div>
+            </a>
+            
+            <!-- Work 3 -->
+            <a href="case-study-3.html" class="work-item" data-category="branding">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="NovaTech Brand Identity" class="work-image">
+                    <div class="tag branding work-tag">Branding</div>
+                </div>
+                <div class="work-content">
+                    <h3>NovaTech Brand Identity</h3>
+                    <p>Complete brand identity for a tech startup</p>
+                    <div class="date">Mar 2022 - Jun 2022</div>
+                </div>
+            </a>
+            
+            <!-- Work 4 -->
+            <a href="case-study-4.html" class="work-item" data-category="mobile">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="HealthTrack Pro" class="work-image">
+                    <div class="tag mobile work-tag">Mobile App</div>
+                </div>
+                <div class="work-content">
+                    <h3>HealthTrack Pro</h3>
+                    <p>Health and fitness tracking application with AI insights</p>
+                    <div class="date">Nov 2021 - Feb 2022</div>
+                </div>
+            </a>
+            
+            <!-- Work 5 -->
+            <a href="case-study-5.html" class="work-item" data-category="uiux">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1551650992-ee4fd47df41f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="FinDash UI System" class="work-image">
+                    <div class="tag uiux work-tag">UI/UX Design</div>
+                </div>
+                <div class="work-content">
+                    <h3>FinDash UI System</h3>
+                    <p>Design system for financial dashboard applications</p>
+                    <div class="date">Jun 2021 - Oct 2021</div>
+                </div>
+            </a>
+            
+            <!-- Work 6 -->
+            <a href="case-study-6.html" class="work-item" data-category="web">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="LearnHub Platform" class="work-image">
+                    <div class="tag web work-tag">Web Design</div>
+                </div>
+                <div class="work-content">
+                    <h3>LearnHub Platform</h3>
+                    <p>Online learning platform with interactive courses</p>
+                    <div class="date">Feb 2021 - May 2021</div>
+                </div>
+            </a>
+            
+            <!-- Work 7 -->
+            <a href="case-study-7.html" class="work-item" data-category="branding">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Artisan Coffee Co." class="work-image">
+                    <div class="tag branding work-tag">Branding</div>
+                </div>
+                <div class="work-content">
+                    <h3>Artisan Coffee Co.</h3>
+                    <p>Brand identity for specialty coffee roastery</p>
+                    <div class="date">Sep 2020 - Dec 2020</div>
+                </div>
+            </a>
+            
+            <!-- Work 8 -->
+            <a href="case-study-8.html" class="work-item" data-category="mobile">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="TravelMate App" class="work-image">
+                    <div class="tag mobile work-tag">Mobile App</div>
+                </div>
+                <div class="work-content">
+                    <h3>TravelMate App</h3>
+                    <p>Travel planning and itinerary management application</p>
+                    <div class="date">Jun 2020 - Aug 2020</div>
+                </div>
+            </a>
+            
+            <!-- Work 9 -->
+            <a href="case-study-9.html" class="work-item" data-category="uiux">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="MediCare Dashboard" class="work-image">
+                    <div class="tag uiux work-tag">UI/UX Design</div>
+                </div>
+                <div class="work-content">
+                    <h3>MediCare Dashboard</h3>
+                    <p>Healthcare management dashboard for clinics</p>
+                    <div class="date">Mar 2020 - May 2020</div>
+                </div>
+            </a>
+            
+            <!-- Work 10 -->
+            <a href="case-study-10.html" class="work-item" data-category="web">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="FitLife Website" class="work-image">
+                    <div class="tag web work-tag">Web Design</div>
+                </div>
+                <div class="work-content">
+                    <h3>FitLife Website</h3>
+                    <p>Fitness and wellness website with booking system</p>
+                    <div class="date">Dec 2019 - Feb 2020</div>
+                </div>
+            </a>
+            
+            <!-- Work 11 -->
+            <a href="case-study-1.html" class="work-item" data-category="mobile">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="SmartHome Control" class="work-image">
+                    <div class="tag mobile work-tag">Mobile App</div>
+                </div>
+                <div class="work-content">
+                    <h3>SmartHome Control</h3>
+                    <p>Mobile application for smart home device management</p>
+                    <div class="date">Aug 2019 - Nov 2019</div>
+                </div>
+            </a>
+            
+            <!-- Work 12 -->
+            <a href="case-study-2.html" class="work-item" data-category="branding">
+                <div class="work-image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Bloom Floral Studio" class="work-image">
+                    <div class="tag branding work-tag">Branding</div>
+                </div>
+                <div class="work-content">
+                    <h3>Bloom Floral Studio</h3>
+                    <p>Brand identity for boutique floral design studio</p>
+                    <div class="date">May 2019 - Jul 2019</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2 style="color: white; margin-bottom: 20px;">Let's Create Something Amazing</h2>
+                <p style="color: #ccc; max-width: 600px; margin: 0 auto 20px;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Works</a>
+                    <a href="about.html">About</a>
                 </div>
                 
-                <!-- 项目 2 -->
-                <div class="work-item" data-category="web">
-                    <div class="work-image">
-                        <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: linear-gradient(45deg, #10b981, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
-                            E-commerce Website
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <span class="work-category" data-key="project2.category">网页设计</span>
-                        <h3 data-key="project2.title">电商用户体验优化</h3>
-                        <p data-key="project2.description">为在线零售商重新设计用户体验，转化率提升34%，结账流程得到改善。</p>
-                        <a href="case-study-2.html" class="work-link" data-key="project2.link">查看案例研究 →</a>
-                   
+                <div class="contact-details-footer">
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> Phone: 13670282592</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email: 13670282592@163.com</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email: zhiwen628@gmail.com</p>
+                </div>
+                
+                <p class="copyright">© 2024 ZZWDESIGN. All rights reserved. | Creative Design Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

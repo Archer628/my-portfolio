@@ -3,296 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banking App Redesign | Case Study</title>
-    <!-- 引入 Poppins 字体 -->
+    <title>Michaels Buyer Tools - Mobile App Case Study | ZZWDESIGN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 引入公共样式 -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <style>
-        /* 案例研究特有样式 */
-        .case-header {
-            padding: 140px 0 60px;
-            text-align: center;
-        }
-        
-        .case-tag {
-            display: inline-block;
-            padding: 6px 16px;
-            background-color: var(--accent-light);
-            color: var(--accent-color);
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-        }
-        
-        .case-title {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-        }
-        
-        .case-meta {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 3rem;
-        }
-        
-        .case-hero-image {
-            width: 100%;
-            height: 500px;
-            background: linear-gradient(120deg, #4361ee 0%, #3a0ca3 100%);
-            border-radius: 20px;
-            margin: 3rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255,255,255,0.9);
-            font-size: 1.5rem;
-        }
-        
-        .case-content {
-            padding: 60px 0 100px;
-        }
-        
-        .section {
-            margin-bottom: 4rem;
-        }
-        
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-        
-        .section-text {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .stat-card {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-        
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .gallery-image {
-            height: 200px;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .case-hero-image {
-                height: 300px;
-            }
-            
-            .case-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="nav-logo">Alex Morgan</a>
-            <ul class="nav-links">
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#other">Other</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn">☰</button>
-        </div>
-    </nav>
-
-    <!-- 案例研究头部 -->
-    <section class="case-header">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <span class="case-tag">Mobile App</span>
-            <h1 class="case-title">Banking App Redesign for Millennial Users</h1>
+            <div class="header-content">
+                <a href="index.html" class="logo">ZZW<span>DESIGN</span></a>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="work.html">Works</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="tag mobile">Mobile App</div>
+            <h1 style="font-size: 48px;">Michaels <span style="color: var(--primary-red);">Buyer Tools</span></h1>
             
-            <div class="case-meta">
-                <div><strong>Client:</strong> FinTech Startup</div>
-                <div><strong>Year:</strong> 2024</div>
-                <div><strong>Role:</strong> Lead UI/UX Designer</div>
-                <div><strong>Timeline:</strong> 3 months</div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Company</h3>
+                    <p>Michaels</p>
+                </div>
+                <div class="info-item">
+                    <h3>Position</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="info-item">
+                    <h3>Timeframe</h3>
+                    <p>January 2023 - March 2024</p>
+                </div>
             </div>
             
-            <div class="case-hero-image">App Screenshots Showcase</div>
-            
-            <a href="work.html" class="back-btn">← Back to All Projects</a>
+            <div class="main-image-container">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Michaels Buyer Tools App Interface" class="main-image">
+                <div class="image-overlay"></div>
+            </div>
         </div>
     </section>
 
-    <!-- 案例内容 -->
-    <section class="case-content">
+    <!-- Project Overview -->
+    <section class="project-overview" id="overview">
         <div class="container">
-            <!-- 概述 -->
-            <div class="section">
-                <h2 class="section-title">Project Overview</h2>
-                <p class="section-text">
-                    A leading fintech startup approached us with a challenge: their mobile banking app had low engagement among millennial users (25-35 age group). Despite having competitive features, users found the app confusing and weren't utilizing its full potential.
-                </p>
-                <p class="section-text">
-                    The goal was to redesign the entire user experience to make financial management intuitive, educational, and engaging for a younger demographic.
-                </p>
-            </div>
-            
-            <!-- 数据统计 -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">+42%</div>
-                    <div class="stat-label">Increase in monthly active users</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">+34%</div>
-                    <div class="stat-label">Improvement in feature discovery</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">4.8★</div>
-                    <div class="stat-label">App Store rating (from 3.2★)</div>
-                </div>
-            </div>
-            
-            <!-- 挑战 -->
-            <div class="section">
-                <h2 class="section-title">The Challenge</h2>
-                <p class="section-text">
-                    Through user interviews and analytics, we identified three main pain points:
-                </p>
-                <p class="section-text">
-                    1. <strong>Financial Jargon:</strong> Millennials felt intimidated by banking terminology<br>
-                    2. <strong>Hidden Features:</strong> Useful tools like budgeting and savings goals were hard to find<br>
-                    3. <strong>Lack of Context:</strong> Transactions were listed without explanations or categorization
-                </p>
-            </div>
-            
-            <!-- 设计过程 -->
-            <div class="section">
-                <h2 class="section-title">Design Process</h2>
-                <p class="section-text">
-                    We followed a double diamond design process: Discover, Define, Develop, Deliver. The key insights came from 15 user interviews and analysis of 2,000+ support tickets.
-                </p>
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <p>The Michaels Buyer Tools mobile application is a comprehensive solution designed to streamline the purchasing process for Michaels stores nationwide. This innovative app empowers store managers and buyers with real-time inventory management, vendor communication, and purchase order tracking capabilities, all from a mobile device.</p>
                 
-                <div class="image-gallery">
-                    <div class="gallery-image">User Journey Map</div>
-                    <div class="gallery-image">Wireframe Sketches</div>
-                    <div class="gallery-image">Prototype Testing</div>
-                </div>
+                <p>As the lead UI/UX designer, I was responsible for the entire design process from initial user research and wireframing to high-fidelity prototypes and developer handoff. I conducted extensive user interviews with store managers to understand their pain points in the procurement process, which informed the app's intuitive navigation and workflow design.</p>
+                
+                <p>The application features a clean, modern interface that prioritizes essential buying tasks while maintaining brand consistency with Michaels' visual identity. Key challenges included designing for complex data visualization in a mobile format and creating an efficient workflow for purchase order approval processes.</p>
+                
+                <p>Since its launch in March 2024, the Michaels Buyer Tools app has been adopted by over 500 store locations, resulting in a 40% reduction in procurement processing time and a 25% decrease in inventory discrepancies. The app has received positive feedback for its intuitive design and has significantly improved efficiency for Michaels' buying teams.</p>
             </div>
-            
-            <!-- 解决方案 -->
-            <div class="section">
-                <h2 class="section-title">Key Solutions</h2>
-                <p class="section-text">
-                    1. <strong>Plain Language Interface:</strong> Replaced banking terms with simple, actionable language<br>
-                    2. <strong>Visual Financial Dashboard:</strong> Created an at-a-glance overview of finances<br>
-                    3. <strong>Smart Categorization:</strong> Automated transaction tagging with editable categories<br>
-                    4. <strong>Educational Tooltips:</strong> Contextual explanations for complex features<br>
-                    5. <strong>Goal Setting Widgets:</strong> Visual progress trackers for savings goals
-                </p>
-            </div>
-            
-            <!-- 结果 -->
-            <div class="section">
-                <h2 class="section-title">Results & Impact</h2>
-                <p class="section-text">
-                    The redesigned app launched in Q3 2024 and immediately showed significant improvements. User testing revealed an 89% satisfaction rate among the target demographic, and customer support tickets related to app confusion decreased by 67%.
-                </p>
-                <p class="section-text">
-                    Most importantly, the app saw a 210% increase in the use of advanced features like automated savings and investment tools, indicating that users were now discovering and trusting these capabilities.
-                </p>
-            </div>
-            
-            <a href="work.html" class="back-btn">← Back to All Projects</a>
         </div>
     </section>
 
-    <!-- 页脚/联系部分 -->
+    <!-- Design Showcase -->
+    <section class="design-showcase" id="showcase">
+        <div class="container">
+            <h2 class="section-title">Design Process & Screens</h2>
+            <div class="design-grid">
+                <!-- Design Item 1 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="User Research & Analysis" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>User Research & Analysis</h3>
+                        <p>Comprehensive user research was conducted with 15 store managers across different regions to understand their procurement workflows. We identified key pain points including inefficient vendor communication, delayed approval processes, and difficulty tracking inventory levels in real-time.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 2 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Wireframing & Information Architecture" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Wireframing & Information Architecture</h3>
+                        <p>Low-fidelity wireframes were created to establish the app's core structure and navigation. The information architecture was designed to prioritize the most frequently used features like inventory checking and purchase order creation, while keeping secondary features easily accessible.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 3 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Visual Design System" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Visual Design System</h3>
+                        <p>A comprehensive design system was created with Michaels' brand colors as the foundation. The system includes typography scales, a consistent icon set, button states, and responsive layout grids to ensure visual harmony across all screens and device sizes.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 4 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Dashboard Design" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Dashboard & Analytics</h3>
+                        <p>The dashboard provides store managers with an at-a-glance view of critical metrics including inventory levels, pending orders, and recent vendor communications. Data visualization was carefully designed for mobile readability with interactive charts and clear key performance indicators.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 5 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Inventory Management Interface" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Inventory Management</h3>
+                        <p>The inventory management screen allows users to check stock levels, set reorder points, and view product details with a single tap. A barcode scanner integration enables quick item lookup, significantly reducing the time needed for inventory checks.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 6 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Purchase Order Creation" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Purchase Order Creation</h3>
+                        <p>The purchase order creation workflow was streamlined to minimize steps while maintaining accuracy. Auto-suggest features for vendor and item selection, along with saved templates for frequently ordered products, make the process efficient for both new and experienced users.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 7 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Vendor Communication Module" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Vendor Communication</h3>
+                        <p>An integrated messaging system allows direct communication with vendors within the app. This feature keeps all procurement-related conversations organized and searchable, eliminating the need to switch between email and the purchasing system.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 8 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Approval Workflow" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Approval Workflow</h3>
+                        <p>The approval workflow was designed to be intuitive and flexible, supporting multiple approval levels and delegation. Push notifications alert approvers to pending requests, and the entire approval chain is visible to all stakeholders for transparency.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 9 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Reporting & Analytics" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>Reporting & Analytics</h3>
+                        <p>Advanced reporting features allow managers to generate custom reports on spending, vendor performance, and inventory turnover. Data can be filtered by date range, product category, or vendor, and exported for further analysis in spreadsheet applications.</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 10 -->
+                <div class="design-item">
+                    <div class="design-image-container">
+                        <img src="https://images.unsplash.com/photo-1551650992-ee4fd47df41f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="User Testing & Iteration" class="design-image">
+                    </div>
+                    <div class="design-content">
+                        <h3>User Testing & Iteration</h3>
+                        <p>Multiple rounds of usability testing were conducted with store managers throughout the design process. Feedback was incorporated into iterative designs, resulting in a highly intuitive interface that requires minimal training for new users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Alex Morgan</h3>
-                    <p>UI/UX Designer focused on creating human-centered digital products that solve real problems.</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Case Studies</h3>
-                    <ul class="footer-links">
-                        <li><a href="case-study-1.html">Banking App Redesign</a></li>
-                        <li><a href="case-study-2.html">E-commerce UX</a></li>
-                        <li><a href="#">Analytics Dashboard</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:hello@alexmorgan.design">hello@alexmorgan.design</a></li>
-                        <li><a href="https://linkedin.com">LinkedIn</a></li>
-                        <li><a href="https://dribbble.com">Dribbble</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>© 2024 Alex Morgan. All rights reserved.</p>
+                <h2 style="color: white; margin-bottom: 20px;">Michaels Buyer Tools</h2>
+                <p style="color: #ccc; max-width: 600px; margin: 0 auto 20px;">A comprehensive mobile solution designed to streamline procurement processes for Michaels stores nationwide, resulting in significant efficiency improvements and user satisfaction.</p>
+                <p class="copyright">© 2024 Michaels Stores. All rights reserved. | UI/UX Design Portfolio Project</p>
             </div>
         </div>
     </footer>
 
-    <!-- 引入公共JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

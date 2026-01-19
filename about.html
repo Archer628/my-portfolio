@@ -1,233 +1,261 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我 | 邹智文</title>
-    <!-- 引入 MiSans 和 Poppins 字体 -->
+    <title>About - ZZWDESIGN Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- 引入公共样式 -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="nav-logo">邹智文</a>
-            <ul class="nav-links">
-                <li><a href="work.html" data-key="nav.work">作品</a></li>
-                <li><a href="about.html" class="active" data-key="nav.about">关于</a></li>
-                <li><a href="index.html#contact" data-key="nav.contact">联系</a></li>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="zh">中</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
-            </ul>
-            <button class="mobile-menu-btn">☰</button>
-        </div>
-    </nav>
-
-    <!-- 关于部分 -->
-    <section class="about">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <h1 class="section-title" data-key="about.title">关于我</h1>
-            <p class="section-subtitle" data-key="about.subtitle">设计师、问题解决者、用户中心设计的倡导者</p>
-            
-            <div class="about-content">
-                <div class="about-image">
-                    <div style="text-align: center; padding: 20px;">
-                        <div style="font-size: 4rem; margin-bottom: 20px;">👨‍💻</div>
-                        <div style="font-size: 1.2rem;">邹智文</div>
-                        <div style="font-size: 1rem; opacity: 0.9; margin-top: 10px;">UI/UX Designer</div>
+            <div class="header-content">
+                <a href="index.html" class="logo">ZZW<span>DESIGN</span></a>
+                <nav>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="work.html">Works</a>
+                        <a href="about.html" class="active">About</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="profile-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Designer Profile">
+            </div>
+            <h1>Hello, I'm Zhiwen Zhang</h1>
+            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 18px; color: var(--medium-gray);">A passionate UI/UX designer with 8+ years of experience creating digital products that are both beautiful and functional. I believe in design that solves real problems and creates meaningful experiences.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Work Experience -->
+            <div class="about-section">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3 class="timeline-company">CreativeMinds Design Studio</h3>
+                        <div class="timeline-position">Senior UI/UX Designer</div>
+                        <p class="timeline-description">Lead designer for mobile and web applications, working with clients from various industries including fintech, healthcare, and e-commerce. Managed design teams and established design systems for multiple projects.</p>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h3 class="timeline-company">TechVision Inc.</h3>
+                        <div class="timeline-position">UI/UX Designer</div>
+                        <p class="timeline-description">Designed user interfaces for SaaS products, conducted user research and testing, created wireframes and prototypes. Collaborated with developers to ensure design implementation quality.</p>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2017 - 2019</div>
+                        <h3 class="timeline-company">DigitalFlow Agency</h3>
+                        <div class="timeline-position">Visual Designer</div>
+                        <p class="timeline-description">Created visual designs for websites, mobile apps, and branding projects. Developed design concepts, mood boards, and style guides for various clients.</p>
+                    </div>
+                    
+                    <!-- Experience 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2015 - 2017</div>
+                        <h3 class="timeline-company">Startup Ventures</h3>
+                        <div class="timeline-position">Junior Designer</div>
+                        <p class="timeline-description">Supported design team with various tasks including graphic design, website mockups, and marketing materials. Assisted in user testing and research activities.</p>
                     </div>
                 </div>
-                <div class="about-text">
-                    <h2 data-key="about.greeting">你好，我是智文</h2>
-                    <p data-key="about.description1">我是一名产品设计师，热衷于创造有意义的数字体验。我的方法结合了用户研究、直观的界面和商业策略，提供人们喜欢使用的产品。</p>
-                    <p data-key="about.description2">我曾与金融科技、电子商务和SaaS行业的科技初创公司和成熟企业合作。我相信好的设计是无形的——它只是有效。</p>
-                    <p data-key="about.description3">当我不在设计的时候，你可以在山里徒步旅行、阅读设计书籍，或者尝试新的设计工具和技术。</p>
+            </div>
+            
+            <!-- Skills -->
+            <div class="about-section">
+                <h2 class="section-title">Skills & Tools</h2>
+                <p style="color: var(--medium-gray); margin-bottom: 20px;">I'm proficient in a wide range of design tools and methodologies to bring ideas to life.</p>
+                
+                <div class="skills-grid">
+                    <!-- Skill 1 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="skill-name">Figma</div>
+                    </div>
                     
-                    <!-- 工作经历 -->
-                    <div class="experience">
-                        <h2 style="font-size: 2rem; margin-bottom: 2rem;" data-key="about.experience">工作经历</h2>
-                        
-                        <div class="experience-item">
-                            <span class="experience-date" data-key="exp1.date">2022-至今</span>
-                            <h3 data-key="exp1.title">高级UI/UX设计师</h3>
-                            <div class="experience-company" data-key="exp1.company">腾讯科技</div>
-                            <p class="experience-description" data-key="exp1.description">负责公司核心产品的用户体验设计，领导设计团队，建立设计系统。主导了多个百万级用户产品的设计重构，提升了用户体验指标。</p>
+                    <!-- Skill 2 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-sketch"></i>
                         </div>
-                        
-                        <div class="experience-item">
-                            <span class="experience-date" data-key="exp2.date">2020-2022</span>
-                            <h3 data-key="exp2.title">UI设计师</h3>
-                            <div class="experience-company" data-key="exp2.company">字节跳动</div>
-                            <p class="experience-description" data-key="exp2.description">参与多个移动应用的设计，专注于界面美学和用户体验优化。设计了多个成功上线的产品功能，获得了用户和市场的积极反馈。</p>
+                        <div class="skill-name">Sketch</div>
+                    </div>
+                    
+                    <!-- Skill 3 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-adobe"></i>
                         </div>
-                        
-                        <div class="experience-item">
-                            <span class="experience-date" data-key="exp3.date">2019-2020</span>
-                            <h3 data-key="exp3.title">视觉设计师</h3>
-                            <div class="experience-company" data-key="exp3.company">阿里巴巴</div>
-                            <p class="experience-description" data-key="exp3.description">负责品牌视觉设计和营销材料的制作，参与电商平台界面设计。为多个大型促销活动设计了视觉系统，提升了品牌识别度。</p>
+                        <div class="skill-name">Photoshop</div>
+                    </div>
+                    
+                    <!-- Skill 4 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <div class="skill-name">Illustrator</div>
+                    </div>
+                    
+                    <!-- Skill 5 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <div class="skill-name">After Effects</div>
+                    </div>
+                    
+                    <!-- Skill 6 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="skill-name">Blender</div>
+                    </div>
+                    
+                    <!-- Skill 7 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <div class="skill-name">CorelDRAW</div>
+                    </div>
+                    
+                    <!-- Skill 8 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-name">HTML/CSS</div>
+                    </div>
+                    
+                    <!-- Skill 9 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="skill-name">Prototyping</div>
+                    </div>
+                    
+                    <!-- Skill 10 -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="skill-name">User Research</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="about-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <p style="color: var(--medium-gray); margin-bottom: 20px;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                
+                <div class="contact-info">
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>13670282592</p>
                         </div>
                     </div>
                     
-                    <!-- 软件技能 -->
-                    <div class="skills">
-                        <h2 style="font-size: 2rem; margin-bottom: 2rem;" data-key="about.skills">软件技能</h2>
-                        
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fab fa-figma"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.figma">Figma</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fab fa-sketch"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.sketch">Sketch</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fab fa-adobe"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.ps">Adobe Photoshop</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fas fa-pen-nib"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.ai">Adobe Illustrator</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fas fa-film"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.ae">After Effects</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fas fa-cube"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.blender">Blender</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fas fa-draw-polygon"></i>
-                                </div>
-                                <div class="skill-name" data-key="skill.cdr">CorelDRAW</div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-icon">
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                <div class="skill-name">React</div>
-                            </div>
+                    <!-- Email 1 -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>13670282592@163.com</p>
                         </div>
                     </div>
                     
-                    <!-- 联系方式 -->
-                    <div class="contact-info">
-                        <h2 style="font-size: 2rem; margin-bottom: 1.5rem;" data-key="about.contact">联系方式</h2>
-                        
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <div class="contact-label" data-key="contact.phone">电话</div>
-                                    <div class="contact-value">136 7028 2592</div>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <div class="contact-label" data-key="contact.email">邮箱</div>
-                                    <a href="mailto:13670282592@163.com" class="contact-value contact-email" data-type="primary">13670282592@163.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <div class="contact-label" data-key="contact.email2">备用邮箱</div>
-                                    <a href="mailto:zhiwen628@gmail.com" class="contact-value">zhiwen628@gmail.com</a>
-                                </div>
-                            </div>
+                    <!-- Email 2 -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>zhiwen628@gmail.com</p>
                         </div>
                     </div>
                     
-                    <div style="margin-top: 3rem; display: flex; gap: 1rem;">
-                        <a href="work.html" class="btn btn-primary" data-key="home.viewWork">查看作品</a>
-                        <a href="index.html#contact" class="btn btn-outline" data-key="home.getInTouch">联系我</a>
+                    <!-- Location -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Shenzhen, China</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- WeChat QR Code -->
+                <div style="text-align: center; margin-top: 40px;">
+                    <h3 style="margin-bottom: 15px;">WeChat</h3>
+                    <div class="qr-code">
+                        <div style="text-align: center;">
+                            <i class="fab fa-weixin" style="font-size: 40px; color: var(--medium-gray); margin-bottom: 10px; display: block;"></i>
+                            <span>Scan to add on WeChat</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 页脚/联系部分 -->
-    <footer id="contact">
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3 class="footer-name">邹智文</h3>
-                    <p data-key="footer.title">专注于创造以人为本的数字产品，解决实际问题。</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    </div>
+                <h2 style="color: white; margin-bottom: 20px;">Let's Create Something Amazing</h2>
+                <p style="color: #ccc; max-width: 600px; margin: 0 auto 20px;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Works</a>
+                    <a href="about.html">About</a>
                 </div>
                 
-                <div class="footer-column">
-                    <h3 data-key="footer.quickLinks">快速链接</h3>
-                    <ul class="footer-links">
-                        <li><a href="work.html" data-key="nav.work">作品</a></li>
-                        <li><a href="about.html" data-key="nav.about">关于</a></li>
-                        <li><a href="#contact" data-key="nav.contact">联系</a></li>
-                    </ul>
+                <div class="contact-details-footer">
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> Phone: 13670282592</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email: 13670282592@163.com</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email: zhiwen628@gmail.com</p>
                 </div>
                 
-                <div class="footer-column">
-                    <h3 data-key="footer.getInTouch">联系我</h3>
-                    <ul class="footer-links">
-                        <li data-key="footer.location">📍 深圳，中国</li>
-                        <li><a href="mailto:13670282592@163.com" class="contact-email" data-type="primary">13670282592@163.com</a></li>
-                        <li><a href="tel:+8613670282592" data-key="footer.phone">+86 136 7028 2592</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p data-key="footer.copyright">© 2024 邹智文. 保留所有权利。</p>
+                <p class="copyright">© 2024 ZZWDESIGN. All rights reserved. | Creative Design Portfolio</p>
             </div>
         </div>
     </footer>
 
-    <!-- 引入公共JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
